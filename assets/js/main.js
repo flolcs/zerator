@@ -36,3 +36,10 @@ btnCloseMenu.addEventListener("click", () => {
   btnCloseMenu.style.display = "none";
   sousMenu.classList.add("closeMenu");
 });
+
+// Twitch
+new Twitch.Embed("twitch-embed", {
+  width: 340,
+  height: 400,
+  channel: "zerator",
+});

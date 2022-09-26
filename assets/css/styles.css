@@ -42,14 +42,15 @@ body {
   font-size: 1rem;
   color: var(--color2);
   background-color: var(--color4);
+  overflow-x: hidden;
 }
 
 /*=============== HEADER ===============*/
 .typed {
   position: absolute;
-  top: 50%;
+  top: 40vh;
   left: 50%;
-  transform: translate(-50% , -50%);
+  transform: translateX(-50%);
   width: 100%;
   height: 100px;
 }
@@ -90,6 +91,10 @@ header {
   display: none;
 }
 
+.btnMenu {
+  cursor: pointer;
+}
+
 ul {
   position: absolute;
   display: none;
@@ -124,6 +129,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 a:hover {
@@ -157,9 +163,18 @@ a:hover {
   transform: translateX(-50%);
 }
 
-
 /*=============== MAIN ===============*/
+main {
+  width: 100%;
+}
 
+.twitchStream {
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
 
 /*=============== FOOTER ===============*/
 
