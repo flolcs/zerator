@@ -1,0 +1,188 @@
+/*=============== FONTS ===============*/
+@font-face {
+  font-family: "font-1";
+  src: url(../fonts/Inter-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "font-3";
+  src: url(../fonts/Inter-Bold.ttf);
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --color1: #000000;
+  --color2: #FFFFFF;
+  --color3: #57af37;
+  --color4: #202020;
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: var(--color3);
+}
+
+body {
+  font-family: "font-2";
+  font-size: 1rem;
+  color: var(--color2);
+  background-color: var(--color4);
+}
+
+/*=============== HEADER ===============*/
+.typed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 100%;
+  height: 100px;
+}
+
+.typed-cursor {
+  display: none;
+}
+
+h1 {
+  font-family: "font-3";
+}
+
+h2 {
+  color: var(--color3);
+  padding-top: 20px;
+}
+
+.topheader {
+  width: 100%;
+}
+
+header {
+  padding: 20px;
+}
+
+.logo {
+  width: 65px;
+  height: 65px;
+}
+
+.imgMenu {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.ri-close-line {
+  display: none;
+}
+
+ul {
+  position: absolute;
+  display: none;
+  top: 80px;
+  left: -300px;
+  height: 80vh;
+  animation: animOpenMenu .5s ease forwards;
+  z-index: 100;
+  background-color: var(--color4);
+}
+
+@keyframes animOpenMenu {
+  to {
+    left: 20px;
+  }
+}
+
+.closeMenu {
+  left: 20px;
+  animation: animCloseMenu .5s ease forwards;
+}
+
+@keyframes animCloseMenu {
+  to {
+    left: -300px;
+    display: none;
+  }
+}
+
+a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+a:hover {
+  margin-left: 30px;
+  transition: .5s;
+}
+
+.reseaux {
+  width: 100%;
+  height: 200px;
+  margin-top: 40px;
+}
+
+.imgReseaux {
+  width: 75px;
+}
+
+.imgReseaux:hover {
+  transform: scale(110%);
+  transition: .5s;
+}
+
+.reseaux a:nth-child(1n) {
+  margin-left: 0;
+}
+
+.botheader {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+}
+
+
+/*=============== MAIN ===============*/
+
+
+/*=============== FOOTER ===============*/
+
+/*=============== RESPONSIVE ===============*/
+
+@media (min-width: 768px) {
+  header {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+
